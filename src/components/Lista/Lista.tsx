@@ -1,5 +1,4 @@
 import { Button } from "@mui/material";
-import { useState } from "react";
 import { Professor } from "../../@types/professor";
 import { Descricao, Foto, Informacoes, ItemLista, ListaStyled, ListaVazia, Nome, Valor } from "./Lista.style";
 
@@ -8,21 +7,8 @@ interface ListaProps {
 }
 
 const Lista = (props: ListaProps) => {
-
-    // const contadorEstado = useState(2);
-    // const contador = contadorEstado[0];
-    // const setContador = contadorEstado[1];
-
-    // deixando mais limpo
-
-    const [contador, setContador] = useState(0);
-
     return (
         <div>
-            {/* contador */}
-            <div>Contador igual {contador}</div>
-            <button onClick={() => setContador(contador + 1)}>Somar +1</button>
-
             {props.professores.length > 0 ? (
                 <ListaStyled>
                     {props.professores.map(professor => (
