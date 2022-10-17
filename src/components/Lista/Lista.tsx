@@ -9,13 +9,13 @@ interface ListaProps {
 
 const Lista = (props: ListaProps) => {
 
-    const contadorEstado = useState(0);
+    const contadorEstado = useState(2);
     const contador = contadorEstado[0];
     const setContador = contadorEstado[1];
 
-
     return (
         <div>
+            {/* contador */}
             <div>Contador igual {contador}</div>
             <button onClick={() => setContador(contador + 1)}>Somar +1</button>
 
