@@ -9,9 +9,13 @@ interface ListaProps {
 
 const Lista = (props: ListaProps) => {
 
-    const contadorEstado = useState(2);
-    const contador = contadorEstado[0];
-    const setContador = contadorEstado[1];
+    // const contadorEstado = useState(2);
+    // const contador = contadorEstado[0];
+    // const setContador = contadorEstado[1];
+
+    // deixando mais limpo
+
+    const [contador, setContador] = useState(0);
 
     return (
         <div>
